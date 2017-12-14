@@ -1,0 +1,125 @@
+.bg-1 {
+   background: /*nifty little background*/
+   linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+   linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+   linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+   linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+   linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+   linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+   background-color: #131313;
+   background-size: 20px 20px;
+   padding-top:55px;
+   box-shadow: 10px 10px 5px grey;
+}
+
+
+.navbar {
+    margin-bottom: 0;
+    background-color: #141C86;
+    z-index: 9999;
+    border: 2px solid black;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+}
+
+.navbar li a, .navbar .navbar-brand {
+    color: #fff !important;
+}
+
+.navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #141C86 !important;
+    background-color: #fff !important;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+}
+/*easy div positioning*/
+.left{
+    float: left;
+}
+.right{
+    float: right;
+
+}
+/*correcting a centering issue I had.*/
+.img-responsive{
+    margin: 0 auto;
+}
+/*my face does not need to be that big.... ever*/
+.profileMax{
+        max-height: 400px;
+}
+
+.logo-pic{
+    max-height: 50px;
+    float: left;
+    padding: 5px;
+}
+.image{
+padding: 25px;
+}
+.infoContain{
+    margin-top: 20px;
+}
+
+.projects{
+    font-weight: bold;
+    text-shadow: 2px 2px 8px #141C86;
+    font-size: 60px;
+    margin-bottom: 25px;
+}
+.display{
+    margin-bottom: 5px;
+    border: 4px solid #141C86;
+    border-radius: 15px;
+}
+.btn{
+   margin: 5px;
+}
+.collapse{
+    margin: 3px;
+}
+#portfolio{
+    margin-bottom: 50px;
+}
+.contactInfo{
+    padding-bottom: 25px;
+    border: 2px solid black;
+}
+.contactText{
+    padding: 25px;
+}
+.footer{
+    background-color:#141C86;
+    min-height: 50px;
+}
+.linked{
+    max-width: 100px;
+}
+
+
+/*Start Breakpoints*/
+@media screen and (min-width: 660px){ /*make text scale to screen size*/
+    .info{
+        font-size:25px;
+    }
+}
+@media screen and (max-width: 800px) { /* center images when text is elongating divs */
+    .image{
+        margin-top: 35px;
+    }
+}
+@media screen and (max-width: 400px) { /* for real small screens */
+    .image{
+        margin-top: 105px;
+    }
+}
+@media screen and (min-width:1200px) {
+    .infoContain{
+        margin-top:55px;
+    }
+}
